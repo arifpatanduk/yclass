@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dashboard - Youngpreneur Class</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white" >Dashboard</a>
+        <div class="dropdown">
+          <a href="#" class="list-group-item list-group-item-action bg-dark dropdown-toggle text-white" data-toggle="dropdown">
+            Pemesanan
+          </a>
+          <div class="dropdown-menu dropdown-menu-right bg-dark">
+            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 1</a>
+            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 2</a>
+            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 3</a>
+          </div>
+        </div>
+
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Contact</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="navbar-toggler" id="menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="zmdi zmdi-more-vert"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="zmdi zmdi-account"></i>
+
+                User <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class='nav-link' href="cart.html">
+                <i class="zmdi zmdi-shopping-cart"></i> Keranjang
+              </a>
+            </li>
+      </nav>
+
+      <!-- CONTENT-->
+      <div class="container-fluid">
+        <h1 class="mt-4">Dashboard</h1>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" role="tab" data-toggle="tab">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu1" role="tab" data-toggle="tab">Profile</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- Best of the Week -->
+          <div role="tabpanel" class="tab-pane fade in active" id="home">
+            <h3>Best of the Week</h3>
+            <p>Terbaik dalam minggu ini (belum termasuk hari ini)</p>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Total Penjualan</th>
+                    <th>UserID</th>
+                    <th>Nama Member</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10</td>
+                    <td>001</td>
+                    <td>Arif</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+          </div>
+
+          <!-- Riwayat penjualan -->
+          <div role="tabpanel" class="tab-pane fade" id="menu1">
+            <h3>Riwayat Penjualan</h3>
+            <p>Riwayat penjualan saya</p>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Waktu Pemesanan</th>
+                    <th>OrderID</th>
+                    <th>Detail Order</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-02-2020</td>
+                    <td>001</td>
+                    <td>
+                      <button class="btn btn-info btn-sm">Lihat detail</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+      </div>
+      <!-- batas content-->
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

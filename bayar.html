@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Pembayaran - Youngpreneur Class</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-dark border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white" >Dashboard</a>
+        <div class="dropdown">
+          <a href="#" class="list-group-item list-group-item-action bg-dark dropdown-toggle text-white" data-toggle="dropdown">
+            Pemesanan
+          </a>
+          <div class="dropdown-menu dropdown-menu-right bg-dark">
+            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 1</a>
+            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 2</a>
+            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 3</a>
+          </div>
+        </div>
+
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Contact</a>
+
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="navbar-toggler" id="menu-toggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="zmdi zmdi-more-vert"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="zmdi zmdi-account"></i>
+
+                User <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class='nav-link' href="#">
+                <i class="zmdi zmdi-shopping-cart"></i> Keranjang
+              </a>
+            </li>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Pembayaran</h1>
+        <div class="row">
+          <div class="col-lg-6 pt-3">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <p style="font-size: 12px">Transfer pembayaran ke nomor rekening Mandiri :</p> 
+                  <h3 style="text-align: center" class="tebal" id="copyText">123456789</h3>
+                  <p style="font-size: 14px; margin-bottom: 0rem">a/n Valiant Lukad</p>
+                  <a style="font-size: 13px" href="#" class="copy-me" rel="copyText">Copy nomor rekening</a> 
+                </center>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pt-3 pb-5">
+            <div class="card">
+              <div class="card-body">
+                <center>
+                  <p style="font-size: 12px">Jumlah yang harus dibayar :</p> 
+                  <h3 style="text-align: center; color: red" class="tebal">Rp 150.021</h3>
+                  <p style="font-size: 14px; margin-bottom: 0rem;">Transfer tepat sampai 3 digit terakhir</p>
+                  <p style="font-size: 12px; margin-bottom: 6px;">Perbedaan digit akan menghambat verifikasi</p> 
+                </center>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="merk">Bukti pembayaran :</label>
+
+          <div class="col-sm-4">
+            <div id="msg"></div>
+            <form method="post" id="image-form">
+              <input type="file" name="img[]" class="file" accept="image/*">
+              <div class="input-group my-3">
+                <input type="text" class="form-control" disabled placeholder="Upload File" id="file">
+                <div class="input-group-append">
+                  <button type="button" class="browse btn btn-primary">Browse...</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-4">
+            <img src="https://placehold.it/80x80" id="preview" class="img-thumbnail">
+          </div>
+
+          <div style="padding-top: 2rem; padding-bottom: 2rem">
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px; width: 100%; height: 50px">
+              <i class="zmdi zmdi-forward"></i> BAYAR
+            </button>
+        </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
