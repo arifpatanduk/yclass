@@ -18,30 +18,59 @@
   <link href="css/simple-sidebar.css" rel="stylesheet">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #282c30 !important;">
+    <button class="navbar-toggler" id="menu-toggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand" href="">
+      <img src="img/logo.png" style="max-width: 150px;" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="zmdi zmdi-more-vert"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class='nav-link' href="#">
+            <i class="fa fa-user"></i> User
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class='nav-link' href="cart.html">
+            <i class="fa fa-sign-out"></i> Logout
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-dark border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white" >Dashboard</a>
-        <div class="dropdown">
-          <a href="#" class="list-group-item list-group-item-action bg-dark dropdown-toggle text-white" data-toggle="dropdown">
-            Pemesanan
-          </a>
-          <div class="dropdown-menu dropdown-menu-right bg-dark">
-            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 1</a>
-            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 2</a>
-            <a class="dropdown-item list-group-item-action bg-dark text-white" href="#">Link 3</a>
-          </div>
-        </div>
 
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Contact</a>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white" >
+          <h5><span class="fa fa-home"></span> Dashboard</h5>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white" >
+          <h5><i class="fa fa-shopping-basket"></i> Pemesanan</h5>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white" >
+          <h5><i class="fa fa-shopping-cart"></i> Keranjang</h5>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <h5><i class="fa fa-question-circle"></i> Bantuan</h5>
+        </a>
 
       </div>
     </div>
@@ -50,10 +79,12 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="navbar-toggler" id="menu-toggle">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <a class="navbar-brand" href="#">Logo</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="zmdi zmdi-more-vert"></span>
@@ -61,36 +92,49 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                <i class="zmdi zmdi-account"></i>
-
-                User <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class='nav-link' href="#">
+                <i class="fa fa-user"></i> User
+              </a>
             </li>
             <li class="nav-item">
               <a class='nav-link' href="cart.html">
-                <i class="zmdi zmdi-shopping-cart"></i> Keranjang
+                <i class="fa fa-sign-out"></i> Logout
               </a>
             </li>
-      </nav>
+          </ul>
+        </div>
+      </nav> -->
 
       <!-- CONTENT-->
       <div class="container-fluid">
         <h1 class="mt-4">Dashboard</h1>
+
+        <!-- TABS -->
         <ul class="nav nav-tabs" role="tablist">
           <li class="nav-item">
-            <a class="nav-link active" href="#home" role="tab" data-toggle="tab">Home</a>
+            <a class=" nav-link active" href="#home" role="tab" data-toggle="tab">
+              <i class="fa fa-star"></i>
+              Best of the Week
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#menu1" role="tab" data-toggle="tab">Profile</a>
+            <a class="nav-link" href="#menu1" role="tab" data-toggle="tab">Pesanan Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu2" role="tab" data-toggle="tab">Menunggu Pembayaran</a>
           </li>
         </ul>
 
+        <!-- Isi Tabs -->
         <div class="tab-content">
+
           <!-- Best of the Week -->
           <div role="tabpanel" class="tab-pane fade in active" id="home">
-            <h3>Best of the Week</h3>
-            <p>Terbaik dalam minggu ini (belum termasuk hari ini)</p>
+            <h3>Best of the Week </h3>
+            <p>Member terbaik dalam minggu ini berdasarkan penjualan terbanyak.</p>
+            <p><i class="fa fa-calendar"></i> 20 Maret 2020 - 27 Maret 2020</p>
+
             <div class="table-responsive">
               <table class="table table-bordered">
                 <thead>
@@ -111,9 +155,9 @@
             </div> 
           </div>
 
-          <!-- Riwayat penjualan -->
+          <!-- Pesanan saya -->
           <div role="tabpanel" class="tab-pane fade" id="menu1">
-            <h3>Riwayat Penjualan</h3>
+            <h3>Daftar Penjualan Saya</h3>
             <p>Riwayat penjualan saya</p>
             <div class="table-responsive">
               <table class="table table-bordered">
@@ -122,6 +166,7 @@
                     <th>Waktu Pemesanan</th>
                     <th>OrderID</th>
                     <th>Detail Order</th>
+                    <th>Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -129,17 +174,54 @@
                     <td>10-02-2020</td>
                     <td>001</td>
                     <td>
-                      <button class="btn btn-info btn-sm">Lihat detail</button>
+                      <button class="btn btn-info btn-sm">Detail</button>
+                    </td>
+                    <td>
+                      <div class="d-flex">
+                        <!-- <div class="p-1 bg-success text-white"> CONFIRMED</div> -->
+                        <div class="p-1 bg-secondary text-white"> UNCONFIRMED</div>
+                      </div>
+
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
+
+          <!-- Menunggu pembayaran -->
+          <div role="tabpanel" class="tab-pane fade" id="menu2">
+            <h3>Menunggu Pembayaran</h3>
+            <p>Pesanan yang belum dibayar</p>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Waktu Pemesanan</th>
+                    <th>OrderID</th>
+                    <th>Detail Order</th>
+                    <th>Pembayaran</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-02-2020</td>
+                    <td>001</td>
+                    <td>
+                      <button class="btn btn-info btn-sm">Detail</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Bayar</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+         <!-- batas isi tabs -->
+          
         </div>
-        
-
-
+        <!-- batas tabs -->
 
       </div>
       <!-- batas content-->
